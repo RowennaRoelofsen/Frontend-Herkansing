@@ -1,0 +1,522 @@
+/*MOBILE FIRST*/
+
+html {
+    margin: 0;
+    width: 100vw;
+}
+
+body {
+    font-size: 0.9em;
+    font-family: "Avenir", sans-serif;
+    line-height: 140%;
+    margin: 0;  /*automatische margin weghalen voor menu*/
+    background-color: #ffcc11;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffcc11;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px #cd950c;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #f2f2f2;
+    font-size: 1.2em;
+    background-color: #333;
+    padding: .4em;
+    margin: 0 .8em;
+    border-radius: 5px 5px 0 0;
+}
+
+h2 > a {
+    color: #f2f2f2;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333;
+    font-size: 1em;
+}
+
+h4 {
+    font-weight: 200;
+    color: dimgray;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0;
+}
+
+a {
+    color: #cd950c;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/*HEADER*/
+
+body > header {
+    padding: 0.5em;
+    background-color: #333;
+    clear: both;
+    overflow: hidden;
+}
+
+body > header, body > header a {
+    color: white;
+    text-decoration: none;
+}
+
+body > header, body > header a:hover {
+    color: #cd950c;
+}
+
+body > header h1, body > header p:first-of-type {
+    display: none;
+}
+
+body > header img:first-of-type {
+    float: left;
+    margin: 0;
+    max-width: 130px;
+    min-width: 130px;
+}
+
+body > header img:nth-of-type(2){
+    float: right;
+    transition: 0.3s;
+    margin: 0;
+}
+
+body > header img:nth-of-type(2):hover{
+    opacity: 0.5;
+}
+
+body > header nav {
+    clear: both;
+    padding-top: 1em;
+}
+
+body > header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body > header nav ul li, body > header p, body > header form {
+    padding: 0.5em;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.menu-hidden {
+    display: none;
+}
+
+.menu-displayed {
+    display: block;
+}
+
+body > header p:hover {
+    background-color: #555;
+}
+
+body > header nav ul li:hover {
+    background-color: #555;
+}
+/*END OF HEADER*/
+
+/*MAIN*/
+main{
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 2em 1em;
+    background-color: white;
+}
+
+main h2 {
+    margin: 0;
+}
+
+main img {
+    width: 100%;
+    max-width: 530px;
+}
+
+audio {
+    width: 100%;
+    max-width: 530px;
+}
+/*EINDE MAIN*/
+
+/*RELATED*/
+.related {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.related > article {
+    border-bottom: 2px solid #d3d3d3;
+    padding: 1em;
+    margin: 0;
+    background-color: white;
+}
+
+.related > article:last-of-type {
+    border: none;
+}
+/*EINDE RELATED*/
+
+
+/*ASIDE*/
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+aside > section:first-of-type{
+    margin-bottom: 1em;
+}
+
+aside > section:last-of-type{
+    margin-bottom: 2em;
+}
+
+aside > section > article {
+    border-bottom: 2px solid #d3d3d3;
+    padding: 1em;
+    margin: 0 1em;
+    background-color: white;
+}
+
+aside > section > article:last-of-type{
+    border: none;
+}
+/*EINDE ASIDE*/
+
+/*FOOTER*/
+body > footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #555;
+    color: #f2f2f2
+}
+
+body > footer a:hover {
+    color: #f2f2f2
+}
+
+body > footer section > *, body > footer p{
+    margin: 1em;
+}
+
+body > footer section {
+    margin-bottom: 1em;
+}
+
+body > footer h2 {
+    margin: 0;
+}
+/*EINDE FOOTER*/
+
+/*FORMULIER*/
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset:nth-of-type(3) > label >input {
+    width: 100%;
+}
+
+form em {
+    color: red;
+}
+
+body > main > form > input:last-of-type {
+    color: white;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #333;
+    font-family: "Avenir";
+    text-transform: uppercase;
+    float: right;
+    transition: 0.3s;
+    margin-top: 1em;
+    box-shadow: 2px 2px 1px #888;
+}
+
+body > main > form > input:last-of-type:hover {
+    opacity: 0.7;
+    box-shadow: none;
+}
+
+/*EINDE FORMULIER*/
+
+body > section {
+    margin: 2em 1em;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+body > section > article {
+    background-color: white;
+    padding: 1em;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+body > section > article:last-of-type {
+    border-bottom: none;
+}
+
+body > section > h2 {
+    margin: 0;
+}
+
+body section ul {
+   margin: 0;
+}
+
+body > section > article > section {
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #d3d3d3;
+}
+
+body > section > article > section:last-of-type {
+    border-bottom: 2px solid #d3d3d3;
+}
+
+dt {
+    font-weight: 800;
+    margin-top: 1em;
+}
+
+dd {
+    margin-left: 0;
+}
+
+
+
+
+/*TABLET*/
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    body > aside {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    body > aside > section {
+        flex: 1;
+    }
+
+    .related > article {
+        width: auto;
+    }
+
+    FORMULIER TABLET
+    body > section {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    body > section > h2 {
+        order: 1;
+        width: 100%;
+    }
+
+     body > section > article {
+        order: 2;
+        flex: 1;
+        width: 20%;
+        border-bottom: none;
+        border-right:  2px solid #d3d3d3;
+    }
+
+    body > section > article:last-of-type {
+        border-right: none;
+    }
+
+    body > section > article > section {
+        word-wrap: break-word;
+    }
+}
+
+
+
+
+/*DESKTOP*/
+@media only screen and (min-width: 961px) {
+
+    /*FLEXBOX LAYOUT ORDER*/
+    body > header {
+        order: 1;
+    }
+    body > main {
+        order: 2;
+    }
+    body > aside {
+        order: 3;
+    }
+    body > .related {
+        order: 4;
+    }
+    body > footer {
+        order: 5;
+    }
+    /*END ORDER*/
+
+    /*DESKTOP HEADER*/
+    .menu-hidden, menu-displayed {
+        display: block;
+        padding: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    body > header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    body > header * {
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    header > img {
+
+        align-self: center;
+        padding-right: 1em;
+    }
+
+    html > body > header > form, html > body > header > p {
+        margin: .5em;
+        padding: .5em;
+    }
+    /*END HEADER*/
+
+    main {
+        flex: 2 0px;
+        margin-right: 0;
+    }
+
+    body > aside {
+        display: block;
+        flex: 1;
+        margin-top: 2em;
+    }
+
+    body > .related {
+        margin-top: 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    body > .related > h2 {
+        order: 1;
+        width: 100%;
+    }
+
+    body > .related > article {
+        flex: 1;
+        order: 2;
+        margin: 0 auto;
+        border-bottom: none;
+    }
+
+    body > .related > article:not(last-of-type) {
+        border-right: 2px solid #d3d3d3;
+    }
+
+    body > footer {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    body > footer section {
+        order: 1;
+        flex: 1;
+    }
+
+    body > footer > p {
+        order: 2;
+    }
+
+    /*FORMULIER DESKTOP*/
+    body > section {
+        order: 4;
+        margin-top: 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    body > section > h2 {
+        order: 1;
+        width: 100%;
+    }
+
+     body > section > article {
+        order: 2;
+        flex: 1;
+         width: 30%;
+        border-bottom: none;
+        border-right:  2px solid #d3d3d3;
+    }
+
+    body > section > article:last-of-type {
+        border-right: none;
+    }
+
+    body > section > article > section {
+        word-wrap: break-word;
+    }
+
+
+/*bronnen
+- stop img from stretching in flexbox: http://stackoverflow.com/questions/37609642/why-does-flexbox-stretch-my-image
+- scaling img. with flexbox
+http://stackoverflow.com/questions/30788131/css3-flexbox-maintain-image-aspect-ratio
+- hamburgermenu
+http://www.w3schools.com/howto/howto_js_topnav.asp
+- word break:
+http://stackoverflow.com/questions/20565201/how-to-make-the-long-text-to-fit-inside-a-small-div
+- positioning with flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
